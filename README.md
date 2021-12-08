@@ -1,7 +1,12 @@
-# Zelo App Chat
+# Full Source Code - Zelo App Chat
 
 ## Video Demo: https://www.youtube.com/watch?v=xjQjPvWpoRU&t=73s
 
+## Members
+
+- Huỳnh Anh Tiên: https://www.topcv.vn/xem-cv/VwMCVwBVBwBbBwYMBFBVUwsCBwACAFkHUwkEAAddfa.
+- Trần Hoàng Phúc: https://i.topcv.vn/tranhoangphuc?ref=4882010.
+- Nguyễn Trần Nhật Hào: https://i.topcv.vn/nguyentrannhathao?ref=4880057.
 ## Deploy
 
 - Yêu cầu: có cài Docker
