@@ -4,9 +4,9 @@
 
 ## Members
 
-- Huỳnh Anh Tiên (BE): https://www.topcv.vn/xem-cv/VwMCVwBVBwBbBwYMBFBVUwsCBwACAFkHUwkEAAddfa.
-- Trần Hoàng Phúc (FE): https://i.topcv.vn/tranhoangphuc?ref=4882010.
-- Nguyễn Trần Nhật Hào (FE): https://i.topcv.vn/nguyentrannhathao?ref=4880057.
+- Huỳnh Anh Tiên (Backend): https://www.topcv.vn/xem-cv/VwMCVwBVBwBbBwYMBFBVUwsCBwACAFkHUwkEAAddfa.
+- Trần Hoàng Phúc (Frontend): https://i.topcv.vn/tranhoangphuc?ref=4882010.
+- Nguyễn Trần Nhật Hào (Frontend): https://i.topcv.vn/nguyentrannhathao?ref=4880057.
 ## Deploy
 
 - Yêu cầu: có cài Docker
