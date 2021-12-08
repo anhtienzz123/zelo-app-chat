@@ -1,0 +1,96 @@
+@import "../../../../scss/variables";
+.modal-detail-reply {
+    .reply-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .time-user {
+            margin-left: 1rem;
+            color: $neutral-500;
+        }
+        margin-bottom: 1rem;
+    }
+    .reply-item {
+        min-height: 40px;
+        border-radius: 8px;
+        background: $blue-700;
+        padding: 1.3rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        word-break: break-all;
+    }
+
+    .reply-item.smoker {
+        background: $white-smoker;
+    }
+
+    .reply-item.video {
+        cursor: pointer;
+    }
+
+    .reply-item.smoker::after {
+        background: $white-smoker;
+    }
+
+    .reply-item.center {
+        justify-content: center;
+    }
+
+    .reply-item::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 12px;
+        background: $blue-700;
+        width: 15px;
+        height: 15px;
+        transform: rotate(45deg) translateY(-50%);
+        // transform: translateY(-50%);
+    }
+
+    .file_info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        cursor: pointer;
+
+        &-name {
+            margin-left: 1rem;
+            font-weight: 500;
+        }
+        &-icon {
+            max-height: 6rem;
+            max-width: 6rem;
+            svg {
+                width: 5rem;
+            }
+        }
+    }
+
+    .file_info-wrapper-reply {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 30rem;
+        padding: 1rem;
+        border-radius: 5px;
+        background: $grey-500;
+
+        .icon-download {
+            cursor: pointer;
+            margin-left: 1rem;
+            font-size: 2rem;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid $grey-300;
+        }
+    }
+}

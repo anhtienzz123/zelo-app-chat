@@ -1,0 +1,47 @@
+@import "../../../../scss/variables";
+#tabpane-vote {
+    margin: 1rem 1.6rem;
+    .tabpane-vote-item {
+        margin: 2rem 0;
+        border: 1px solid #c6c6c6;
+        border-radius: 0.4rem;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1530px) {
+        .vote-message {
+            min-width: 24.2rem;
+        }
+        .vote-message_item {
+            width: 24rem;
+        }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .vote-message {
+            min-width: 28.2rem;
+        }
+        .vote-message_item {
+            width: 28rem;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 767px) {
+        .vote-message {
+            min-width: 28.2rem;
+        }
+        .vote-message_item {
+            width: 28rem;
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        .vote-message {
+            min-width: 28.2rem;
+        }
+        .vote-message_item {
+            width: 28rem;
+        }
+    }
+}

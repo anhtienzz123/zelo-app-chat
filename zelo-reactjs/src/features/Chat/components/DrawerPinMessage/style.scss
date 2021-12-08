@@ -1,0 +1,35 @@
+@import "../../../../scss/variables";
+#drawer-pin {
+    #summary-pin {
+        position: absolute;
+    }
+    .drawer-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3rem 1rem;
+        font-size: 1.3rem;
+        background: $white-smoke;
+
+        &-title {
+            color: $normal-text;
+        }
+        &-collapse {
+            cursor: pointer;
+        }
+    }
+    .drawer-footer {
+        padding: 0.6rem;
+        text-align: center;
+        font-size: 1.3rem;
+        background: $grey-500;
+        cursor: pointer;
+    }
+
+    .ant-drawer-content-wrapper,
+    .ant-drawer-body {
+        min-height: 50px;
+        height: unset !important;
+    }
+}

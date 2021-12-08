@@ -1,0 +1,29 @@
+.detail-vote {
+    &-wrapper {
+    }
+    &_option {
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    &_list-user {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &_user-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    &_name {
+        margin-left: 1rem;
+    }
+    &_name.leave {
+        color: #c6c6c6;
+    }
+}

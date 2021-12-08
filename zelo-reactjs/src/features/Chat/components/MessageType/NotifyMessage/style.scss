@@ -1,0 +1,38 @@
+.notify-message-wrapper {
+    display: flex;
+    justify-content: center;
+    .notify-message-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        word-wrap: break-word;
+        max-width: 90%;
+        padding: 7px 14px;
+        font-size: 13px;
+
+        margin: 1rem 0;
+        background: #fff;
+        border-radius: 10px;
+
+        .view-click {
+            color: #58aeff;
+            cursor: pointer;
+        }
+
+        &_group-avatar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &_per-avatar:nth-child(n + 2) {
+            margin-left: -8px;
+        }
+
+        &-title {
+            margin-left: 1rem;
+        }
+    }
+}

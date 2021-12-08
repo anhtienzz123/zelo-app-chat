@@ -1,0 +1,87 @@
+@import "../../scss/variables";
+#account_page {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    // margin: 2rem 0;
+    height: 100vh;
+    background-image: url(../../assets/images/account/account-bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.account-common-page {
+    margin: auto;
+
+    .account-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    .account_left {
+        width: 40%;
+        background: $ghost-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .account_right {
+        background: #fff;
+        padding-top: 1rem;
+        width: 60%;
+        .form-account {
+            padding: 0 3rem;
+        }
+    }
+
+    .addtional-link {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        a {
+            margin: 0.5rem 0;
+        }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .account-wrapper {
+            width: 70%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .account-wrapper {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 767px) {
+        .account_left {
+            display: none;
+        }
+        .account_right {
+            width: 100%;
+        }
+        .account-wrapper {
+            width: 90%;
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        .account-wrapper {
+            box-shadow: unset;
+            width: 100%;
+        }
+        .account_left {
+            display: none;
+        }
+        .account_right {
+            width: 100%;
+        }
+    }
+}

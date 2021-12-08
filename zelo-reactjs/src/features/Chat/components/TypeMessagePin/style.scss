@@ -1,0 +1,95 @@
+.type-pin-message {
+    .text-pin {
+        max-width: 30vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+    &_HTML,
+    &_IMAGE,
+    &_VIDEO,
+    &_FILE {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.type-pin-message_des_FILE {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .file_info-icon {
+        height: 2rem;
+        width: 2rem;
+        svg {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+    .file_info-name {
+        max-width: 30vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .type-pin-message_des_FILE .file_info-name {
+        max-width: 25vw;
+    }
+    .type-pin-message_des_FILE .file_info-icon {
+        height: 1.9rem;
+        width: 1.9rem;
+        svg {
+            height: 1.9rem;
+            width: 1.9rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .type-pin-message_des_FILE .file_info-name {
+        max-width: 20vw;
+    }
+    .type-pin-message_des_FILE .file_info-icon {
+        height: 1.8rem;
+        width: 1.8rem;
+        svg {
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .type-pin-message_des_FILE .file_info-name {
+        max-width: 16vw;
+    }
+    .type-pin-message_des_FILE .file_info-icon {
+        height: 1.7rem;
+        width: 1.7rem;
+        svg {
+            height: 1.7rem;
+            width: 1.7rem;
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .type-pin-message_des_FILE .file_info-name {
+        max-width: 12vw;
+    }
+    .type-pin-message_des_FILE .file_info-icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+}

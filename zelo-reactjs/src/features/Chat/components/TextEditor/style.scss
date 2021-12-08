@@ -1,0 +1,50 @@
+.ql-toolbar {
+    background: whitesmoke;
+    position: sticky;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+    border: none;
+}
+
+.ql-snow .ql-tooltip {
+    top: 0 !important;
+    right: 0 !important;
+    left: initial !important;
+}
+
+.ql-container {
+    overflow-y: scroll;
+    min-height: 50px;
+    max-height: 142px;
+    font-size: 16px;
+}
+
+.ql-container::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+}
+
+.ql-container::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #e1e4ea;
+}
+
+.ql-container::-webkit-scrollbar-track {
+    background: none;
+}
+
+#text-editor {
+    outline: none;
+    word-break: break-word;
+    word-wrap: break-word;
+    min-height: 16px;
+    max-height: 182px;
+}
+
+.ql-editor img {
+    width: 170px;
+}

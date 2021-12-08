@@ -1,0 +1,84 @@
+@import "../../scss/variables";
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.item-menu {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.modal-view-option {
+    &_title {
+        text-align: center;
+        small {
+            color: $neutral-500;
+        }
+        strong {
+            color: initial;
+        }
+    }
+    .overview-text {
+        color: $base-color;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .overview-text:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    // &_checkbox {
+    //     width: 85%;
+    // }
+    .vote-message_item {
+        &_name-option {
+            z-index: 1;
+        }
+    }
+
+    &_avatar {
+        width: 60px;
+    }
+
+    &_list {
+        padding: 0 2rem;
+        .ant-checkbox-group {
+            display: block;
+        }
+    }
+    &_add {
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+    &_form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .temp-space {
+        width: 15%;
+    }
+
+    .form-input {
+        margin-left: 1rem;
+        width: 100%;
+        .ant-input-affix-wrapper {
+            padding: 4px 4px;
+        }
+    }
+}

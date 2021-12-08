@@ -1,0 +1,13 @@
+.middle-side-box {
+    .lastest-message {
+        .tag-classify {
+            padding-right: 0.4rem;
+        }
+    }
+    .name-box {
+        overflow: hidden;
+        word-wrap: break-word;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

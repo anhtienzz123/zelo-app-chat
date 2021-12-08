@@ -1,0 +1,42 @@
+.contact-card {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1.5rem 2rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    &_info-user {
+        display: flex;
+        align-items: center;
+    }
+    &_info {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &_name {
+        font-size: 1.6rem;
+    }
+
+    &_interact {
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &_button--accept {
+        margin-left: 1rem;
+    }
+}
+
+.contact-card:first-child,
+.contact-card:last-child {
+    margin-top: 2rem;
+}
+
+.contact-card:nth-child(n + 1) {
+    margin-top: 1rem;
+}

@@ -1,0 +1,22 @@
+@import "../../../../scss/_variables.scss";
+
+.pin-item {
+    &_top {
+        display: flex;
+        align-items: center;
+    }
+    &_name {
+        font-weight: 500;
+    }
+    &_info {
+        margin-left: 1rem;
+    }
+    &_bottom,
+    &_icon {
+        color: $neutral-500;
+    }
+
+    &_body {
+        padding: 1rem 0;
+    }
+}

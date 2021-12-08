@@ -1,0 +1,10 @@
+@import "../../../../scss/variables";
+
+.channel-item.active {
+    background: rgba(88, 174, 255, 0.3);
+    color: $strong-blue;
+}
+
+.channel-item.active:hover {
+    background: rgba(88, 174, 255, 0.3);
+}

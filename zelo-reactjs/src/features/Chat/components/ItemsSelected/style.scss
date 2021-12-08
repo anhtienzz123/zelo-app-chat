@@ -1,0 +1,35 @@
+@import "../../../../scss/variables";
+
+.item-selected--text {
+    background-color: rgba(88, 174, 255, 0.5);
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+
+    align-items: center;
+    border-radius: 14px;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    margin: 0.6rem 1rem;
+
+    .item-selected-name {
+        font-size: 14px;
+        color: $base-color;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+.item-selected_wrapper {
+    position: relative;
+    .item-selected-remove {
+        position: absolute;
+        color: $base-color;
+        font-size: 18px;
+        cursor: pointer;
+        top: 0;
+        right: 2rem;
+    }
+}

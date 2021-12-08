@@ -1,0 +1,44 @@
+@import "../../../../scss/variables";
+.info_name-and-thumbnail {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+
+    .info-name-and-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .info-name {
+            font-weight: 600;
+            font-size: 18px;
+            padding: 0 1rem;
+        }
+
+        .info-button {
+            flex-direction: row;
+            font-size: 16px;
+            border-radius: 50%;
+            background: $grey-400;
+
+            height: 22px;
+            width: 22px;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            cursor: pointer;
+            padding: 0 1rem;
+        }
+    }
+}
+
+.update-profile_upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}

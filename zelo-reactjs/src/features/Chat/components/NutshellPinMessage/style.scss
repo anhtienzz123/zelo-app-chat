@@ -1,0 +1,87 @@
+@import "../../../../scss/variables";
+
+.nutshell-pin-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: #fff;
+    border-bottom: 0.05px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+}
+
+.nutshell-pin-container.select:hover {
+    background: $grey-500;
+}
+.nutshell-pin-container.no-hover:hover {
+    background: #fff;
+}
+
+.nutshell-pin-container.select:hover .nutshell-pin-container_right {
+    background: $grey-500;
+    display: block;
+}
+
+.nutshell-pin-container {
+    z-index: 2;
+    &_left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.3rem 2rem;
+        width: 100%;
+    }
+    &_messsage {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1rem;
+    }
+    &_right {
+        position: absolute;
+        right: 2rem;
+        transition: 0.2s;
+
+        border-radius: 50%;
+        button .nutshell-pin-container_button-interact {
+            font-size: 1.3rem;
+            padding: 0.2rem 1rem;
+            border-radius: 50%;
+        }
+    }
+    &_right.no-display {
+        display: none;
+    }
+
+    &_icon {
+        font-size: 2rem;
+    }
+
+    &_title {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    &_detail {
+        font-size: 1.3rem;
+    }
+    &_button-interact {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: 0.2s;
+        border: none;
+        svg {
+            font-size: 2rem;
+        }
+    }
+    &_button-interact:hover {
+        background: $grey-300;
+        cursor: pointer;
+    }
+}

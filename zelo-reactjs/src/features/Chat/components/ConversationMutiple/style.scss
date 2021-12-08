@@ -1,0 +1,14 @@
+#group-many-user {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .per-user:nth-child(2),
+    .per-user:nth-child(4) {
+        margin-left: -8px;
+    }
+
+    .per-user:nth-child(3),
+    .per-user:nth-child(4) {
+        margin-top: -8px;
+    }
+}

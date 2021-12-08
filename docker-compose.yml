@@ -1,0 +1,89 @@
+version: '3'
+
+services:
+  mongo-database:
+    image: mongo
+    container_name: mongo-database
+    restart: on-failure:5
+    volumes:
+      - ./mongo-database:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: zelo
+    ports:
+      - 27017:27017
+    networks:
+      - zelo
+
+  redis-database:
+    image: redis
+    container_name: redis-database
+    restart: on-failure:5
+    ports:
+      - 6379:6379
+    networks:
+      - zelo
+
+  zelo-nodejs:
+    image: zelo-nodejs
+    container_name: zelo-nodejs
+    restart: on-failure:5
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongo-database
+      - redis-database
+    environment:
+      PORT: 3001
+      LOCAL_DATABASE_URL: mongodb://mongo-database:27017/zelo
+      REDIS_HOST: redis-database
+      REDIS_PORT: 6379
+      JWT_KEY: zelo
+      JWT_LIFE_ACCESS_TOKEN: 3d
+      JWT_LIFE_REFRESH_TOKEN: 90d
+      EMAIL: 
+      EMAIL_PASSWORD: 
+      CLOUDINARY_URL: 
+      AWS_BUCKET_NAME: 
+      AWS_BUCKET_NAME_ADMIN: 
+      AWS_BUCKET_REGION: 
+      AWS_ACCESS_KEY: 
+      AWS_SECRET_KEY: 
+      MAX_FILE_SIZE: 20971520
+      OTP_EXPIRE_MINUTE: 5
+      BALANCE_API_URL: http://rest.esms.vn/MainService.svc/json/GetBalance_json
+      PHONE_OTP_API_URL: http://rest.esms.vn/MainService.svc/json/SendMultipleMessage_V4_get
+      PHONE_API_KEY: 
+      PHONE_API_SECRET: 
+      ENABLE_GOOGLE_CAPTCHA: ENABLE
+      KEY_GOOGLE_CAPTCHA: 
+    build:
+      context: ./zelo-nodejs
+    networks:
+      - zelo
+
+  zelo-reactjs:
+    image: zelo-reactjs
+    container_name: zelo-reactjs
+    restart: on-failure:5
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - zelo-nodejs
+    volumes:
+      - ./ssl:/etc/letsencrypt
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    build:
+      context: ./zelo-reactjs
+      args:
+        - REACT_APP_API_URL=https://zelochat.xyz/api
+        - REACT_APP_SOCKET_URL=https://zelochat.xyz
+        - REACT_APP_URL=https://zelochat.xyz
+    networks:
+      - zelo
+
+networks:
+  zelo:
+    driver: bridge
+volumes:
+    mongo-database:

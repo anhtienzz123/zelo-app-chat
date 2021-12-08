@@ -1,0 +1,17 @@
+#main-body-conversation {
+    height: 100%;
+    // margin: 2rem 0;
+}
+
+.spinning-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000000;
+}

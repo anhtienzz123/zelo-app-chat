@@ -1,0 +1,37 @@
+@import "../../../../scss/variables";
+#navigation-chat-box {
+    font-size: 2.2rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    > ul {
+        list-style-type: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .item-chat-box {
+        width: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+
+    .item-chat-box:hover {
+        background-color: $light-grey;
+        color: inherit !important;
+    }
+
+    // .item-chat-box ~ .item-chat-box {
+    //     margin-right: 1rem;
+    // }
+}
+
+.item-menu-vote {
+    font-size: 1.3rem;
+    font-weight: 500;
+}

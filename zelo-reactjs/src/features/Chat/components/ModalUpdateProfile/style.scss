@@ -1,0 +1,19 @@
+.profile-update {
+    &_cover-image {
+        position: relative;
+    }
+    &_upload {
+        height: 18rem;
+    }
+    &_avatar {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    &_info {
+        margin-top: 5rem;
+        padding: 2rem 1.6rem;
+    }
+}

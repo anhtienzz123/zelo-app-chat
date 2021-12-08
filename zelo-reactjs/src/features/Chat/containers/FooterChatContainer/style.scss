@@ -1,0 +1,93 @@
+@import "../../../../scss/variables";
+
+#main-footer-chat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .chat-editor {
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+
+        align-items: center;
+        flex: 1;
+
+        .mention-option_wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: red;
+
+            .name-user-item {
+                margin-left: 10rem;
+                font-size: 12px;
+                font-weight: 400;
+                flex: 1;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        .main-editor {
+            .ant-mentions:hover,
+            .ant-mentions:focus,
+            .ant-mentions-focused {
+                border-right-width: 0 !important;
+                border-color: none !important;
+                outline: 0;
+                box-shadow: none !important;
+            }
+            flex: 1;
+            width: 100%;
+            textarea::-webkit-scrollbar {
+                width: 0.5em;
+                height: 0.5em;
+                position: absolute;
+                right: 0;
+            }
+
+            textarea::-webkit-scrollbar-thumb {
+                border-radius: 6px;
+                background: #e1e4ea;
+            }
+
+            textarea::-webkit-scrollbar-track {
+                background: none;
+            }
+        }
+
+        .addtion-interaction {
+            display: flex;
+            flex-direction: row;
+            font-size: 2.4rem;
+            padding: 0 0.8rem;
+            align-self: flex-end;
+
+            .emoji-or-stiker,
+            .like-emoji {
+                margin: 0.2rem 0;
+                padding: 0.4rem 1rem;
+
+                transition: 0, 2s;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            .send-text-thumb {
+                font-weight: 500;
+                color: $base-color;
+                font-size: 24px;
+            }
+
+            .emoji-or-stiker:hover,
+            .like-emoji:hover {
+                background: $light-grey;
+            }
+            // .like-emoji {
+            // }
+        }
+    }
+}

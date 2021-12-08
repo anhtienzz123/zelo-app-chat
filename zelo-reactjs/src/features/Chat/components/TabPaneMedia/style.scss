@@ -1,0 +1,34 @@
+#tabpane-media {
+    height: 100%;
+}
+
+.option-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .name-user-item {
+        margin-left: 1rem;
+        font-size: 12px;
+        font-weight: 400;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.item-in-archive-media {
+  
+    margin: 1.6rem 0;
+    .time-sent {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+
+    .list-item-sent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

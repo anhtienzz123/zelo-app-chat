@@ -1,0 +1,12 @@
+@import "../../../../scss/variables";
+#main-info {
+    background: #fff;
+    height: 100%;
+
+    .info_member-wrapper,
+    .info_archive-media-wrapper,
+    .info_archive-file-wrapper,
+    .info_another-setting-wrapper {
+        border-top: 0.6rem solid $grey-400;
+    }
+}

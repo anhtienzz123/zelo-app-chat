@@ -1,0 +1,47 @@
+@import "../../../../scss/variables";
+
+.conversation-item_box {
+    #group-many-user {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .per-user:nth-child(2),
+        .per-user:nth-child(4) {
+            margin-left: -8px;
+        }
+
+        .per-user:nth-child(3),
+        .per-user:nth-child(4) {
+            margin-top: -8px;
+        }
+    }
+
+    width: 100%;
+    display: flex;
+    .left-side-box {
+        .icon-users-group {
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    .ant-avatar-group .ant-avatar:nth-child(1),
+    .ant-avatar-group .ant-avatar:nth-child(3) {
+        margin-left: 0 !important;
+    }
+
+    .ant-avatar-group .ant-avatar:nth-child(3),
+    .ant-avatar-group .ant-avatar:nth-child(4) {
+        margin-top: -8px;
+    }
+    .ant-avatar-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .line-group {
+        .second-line-group {
+            margin-top: -8px;
+        }
+    }
+}

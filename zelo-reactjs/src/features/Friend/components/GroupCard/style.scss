@@ -1,0 +1,46 @@
+@import "../../../../scss/variables";
+.group-card {
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    padding: 5rem 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    min-height: 26.5rem;
+
+    &__name-group {
+        font-weight: 500;
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+
+    &__total-member {
+        font-size: 13px;
+        color: $thumbnail-text;
+        // transition: 0.2s;
+    }
+
+    &__total-member:hover {
+        font-size: 13px;
+        color: $blue-light;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &__interact {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    &:hover &__interact {
+        opacity: 1;
+        display: block;
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+.list-filter_single-conver {
+    .single-conver {
+        &_item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1rem 0.5rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        &_name {
+            margin-left: 1rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        &_item:hover {
+            background: $light-grey;
+        }
+    }
+}

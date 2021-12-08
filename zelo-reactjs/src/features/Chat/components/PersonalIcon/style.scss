@@ -1,0 +1,16 @@
+$icon-demention: 48px;
+.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon.common {
+    height: auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-online .ant-badge-status-green {
+    display: none;
+}

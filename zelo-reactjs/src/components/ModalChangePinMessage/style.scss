@@ -1,0 +1,37 @@
+@import "../../scss/variables";
+
+.modal-change-pin_wapper {
+    border: 0.5px solid $grey-300;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.modal-change-pin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+
+    &_icon {
+        font-size: 2rem;
+    }
+    &_title {
+        font-weight: 500;
+    }
+
+    &_messsage {
+        margin-left: 1rem;
+        // display: flex;
+    }
+
+    &_left {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.modal-change-pin:hover {
+    background: $grey-500;
+}

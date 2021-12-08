@@ -1,0 +1,151 @@
+@import "../../../../scss/variables";
+
+#modal-add-member-to-conver {
+    height: 70vh;
+    .divider-title {
+        font-weight: 500;
+    }
+
+    .heading-group {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        .select-background {
+            font-size: 24px;
+            width: 48px;
+            height: 48px;
+            text-align: center;
+
+            justify-content: center;
+            border-radius: 50%;
+            border: 0.5px solid $grey-400;
+            display: flex;
+
+            align-items: center;
+            color: $thumbnail-text;
+        }
+
+        .input-name-group {
+            padding: 0 1rem;
+            flex: 1;
+        }
+    }
+
+    .list-friend-interact {
+        position: relative;
+        overflow: hidden;
+        .checkbox-list-friend {
+            height: 40vh;
+
+            overflow-y: scroll;
+        }
+
+        .checkbox-list-friend::-webkit-scrollbar {
+            width: 0.5em;
+            height: 0.5em;
+            position: absolute;
+            right: 0;
+        }
+
+        .checkbox-list-friend::-webkit-scrollbar-thumb {
+            border-radius: 6px;
+            background: #e1e4ea;
+        }
+
+        .checkbox-list-friend::-webkit-scrollbar-track {
+            background: none;
+        }
+
+        display: flex;
+        flex-direction: row;
+        &--left {
+            height: 100%;
+            width: 55%;
+            overflow: hidden;
+            transition: 0.2s;
+
+            .title-list-friend {
+                font-weight: 500;
+                margin-bottom: 1.4rem;
+            }
+
+            .checkbox-list-friend {
+                overflow-y: scroll;
+
+                height: 42vh;
+                .item-checkbox {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .item-name {
+                        font-size: 16px;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+
+        &--left.full-container {
+            width: 100%;
+        }
+
+        &--right {
+            position: absolute;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 40%;
+            margin: 0 0.8rem;
+
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            right: 0;
+
+            transition: 0.2s;
+
+            .title-list-friend-checked {
+                margin: 0 1rem;
+                display: block;
+                overflow: hidden;
+                strong {
+                    color: $blue-zelo;
+                }
+            }
+        }
+
+        &--right.close {
+            transition: 0.2s;
+            right: -100%;
+
+            .title-list-friend-checked {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 767px) {
+        .list-friend-interact--left {
+            width: 100%;
+        }
+        .list-friend-interact--right {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        .list-friend-interact--left {
+            width: 100%;
+        }
+        .list-friend-interact--right {
+            display: none;
+        }
+    }
+}

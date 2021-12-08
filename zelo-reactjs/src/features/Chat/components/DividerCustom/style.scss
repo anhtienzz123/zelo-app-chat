@@ -1,0 +1,32 @@
+@import "../../../../scss/variables";
+
+#divider-custom {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 1rem auto;
+
+    align-items: center;
+
+    .divider-custom_bar {
+        height: 0.5px;
+        background-color: $thumbnail-text;
+        flex: 1;
+    }
+
+    .divider-custom_info {
+        display: flex;
+        flex-direction: row;
+        padding: 2px 10px;
+
+        background-color: $thumbnail-text;
+        color: $white-color;
+        font-size: 13px;
+        border-radius: 10px;
+
+        div {
+            padding: 0 0.2rem;
+        }
+
+    }
+}

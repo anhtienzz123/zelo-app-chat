@@ -1,0 +1,58 @@
+@import "../../scss/variables";
+.modal-join-link {
+    &_info {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_name {
+        font-weight: 500;
+        font-size: 2.6rem;
+    }
+    &_members {
+        color: $thumbnail-text;
+    }
+
+    &_list-member::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+        position: absolute;
+        right: 0;
+    }
+
+    &_list-member::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: #e1e4ea;
+    }
+
+    &_list-member::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &_list-member {
+        max-height: 50vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        .member-item {
+            padding: 0 0.3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            &_name {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: break-word;
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+            }
+        }
+    }
+}

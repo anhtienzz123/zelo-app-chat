@@ -1,0 +1,165 @@
+@import "../../../../scss/variables";
+#header-optional {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header_rightside .pop-up-layout {
+            display: none;
+        }
+        .pop-up-responsive {
+            display: inline-block;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .header_rightside .pop-up-layout {
+            display: none;
+        }
+        .pop-up-responsive {
+            display: inline-block;
+        }
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 767px) {
+        .icon-header.back-list {
+            display: block;
+        }
+        .pop-up-layout {
+            display: none;
+        }
+        .pop-up-responsive {
+            display: inline-block;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .pop-up-layout {
+            display: none;
+        }
+        .pop-up-responsive {
+            display: inline-block;
+        }
+        .icon-header.back-list {
+            display: block;
+        }
+    }
+    flex: 1;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    overflow: hidden;
+
+    .header_leftside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon_user {
+            cursor: pointer;
+        }
+
+        .info_user {
+            margin-left: 1.4rem;
+
+            .channel_info {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                text-overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                word-wrap: break-word;
+                color: $base-color;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+
+            .lastime-access {
+                display: flex;
+                > span {
+                    font-size: 1.4rem;
+                    color: $thumbnail-text;
+                }
+
+                .member-hover {
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+                .member-hover:hover {
+                    color: $blue-light;
+                }
+            }
+            .info_user-name {
+                font-weight: 600;
+                font-size: 1.8rem;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+            .small-bar {
+                width: 0.01rem;
+                background-color: black;
+                color: $thumbnail-text;
+                height: 1.4rem;
+                margin: auto 0.8rem;
+            }
+        }
+
+        .icon-header.back-list {
+            cursor: pointer;
+            padding: 0 0.56rem;
+            transition: 0.2s;
+            border-radius: 4px;
+            font-size: 20px;
+            margin-right: 1rem;
+            display: none;
+        }
+        .icon-header.back-list:hover {
+            background-color: $light-grey;
+        }
+    }
+
+    .classify-object {
+        cursor: pointer;
+    }
+    .header_rightside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+
+        .icon-header {
+            margin: 0 0.5rem;
+        }
+
+        .search-message,
+        .pop-up-layout,
+        .create-group,
+        .call-video,
+        .back-channel,
+        .pop-up-responsive {
+            cursor: pointer;
+            padding: 0 0.56rem;
+            transition: 0.2s;
+            border-radius: 4px;
+        }
+
+        .search-message:hover,
+        .pop-up-layout:hover,
+        .create-group:hover,
+        .call-video:hover,
+        .back-channel:hover,
+        .pop-up-responsive:hover {
+            background-color: $light-grey;
+        }
+        .pop-up-responsive {
+            display: none;
+        }
+    }
+
+    /* width >= 992 and width < 1199px */
+}

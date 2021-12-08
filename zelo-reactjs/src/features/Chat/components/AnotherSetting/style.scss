@@ -1,0 +1,57 @@
+@import "../../../../scss/variables";
+.info_setting {
+    background: #fff;
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.8rem 1.2rem;
+
+        &-title {
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+        &-icon {
+            transition: 0.2s;
+            font-size: 1.6rem;
+            color: $neutral-500;
+        }
+    }
+
+    &-interact {
+        position: relative;
+        overflow-y: hidden;
+        max-height: 300px;
+        transition: max-height 0.2s ease;
+
+        &-amount {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0.8rem 1.4rem;
+            cursor: pointer;
+        }
+        &-amount-icon {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.4rem;
+            transition: 0.2s;
+        }
+        &-amount-text {
+            padding-left: 1rem;
+        }
+
+        .danger {
+            color: red !important;
+        }
+    }
+
+    &-interact-amount:hover {
+        background: $grey-400;
+    }
+}

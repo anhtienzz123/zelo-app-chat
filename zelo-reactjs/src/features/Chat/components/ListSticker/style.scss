@@ -1,0 +1,22 @@
+#sticker-list {
+    max-height: 45vh;
+    max-width: 40vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#sticker-list::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+}
+
+#sticker-list::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #e1e4ea;
+}
+
+#sticker-list::-webkit-scrollbar-track {
+    background: none;
+}

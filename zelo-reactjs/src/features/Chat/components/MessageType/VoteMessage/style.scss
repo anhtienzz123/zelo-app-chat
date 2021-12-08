@@ -1,0 +1,101 @@
+@import "../../../../../scss/variables";
+
+.vote-message {
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+    }
+
+    min-width: 33.2rem;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_number-voted {
+        color: $base-color;
+        font-weight: 500;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    &_list {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        div ~ div {
+            margin-top: 1rem;
+        }
+    }
+
+    &_view-all {
+        padding: 0 0.6rem;
+    }
+    &_item {
+        width: 300px;
+        background: $grey-400;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0.6rem 0.9rem;
+        cursor: pointer;
+
+        span {
+            width: 80%;
+            word-break: break-all;
+            text-align: left;
+            z-index: 1;
+        }
+        strong {
+            width: 20%;
+            text-align: right;
+            z-index: 1;
+        }
+    }
+
+    &_progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(171, 205, 255);
+        border-radius: 5px;
+        height: 100%;
+        transition: 0.2s;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .vote-message {
+        min-width: 28.2rem;
+    }
+    .vote-message_item {
+        width: 28rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .vote-message {
+        min-width: 28.2rem;
+    }
+    .vote-message_item {
+        width: 28rem;
+    }
+}

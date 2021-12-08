@@ -1,0 +1,13 @@
+.mention-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .name-user-item {
+        margin-left: 1rem;
+        font-size: 12px;
+        font-weight: 400;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

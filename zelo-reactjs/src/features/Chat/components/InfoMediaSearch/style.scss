@@ -1,0 +1,21 @@
+@import "../../../../scss/variables";
+#info_media-search {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .info_media-search-content {
+        flex: 1;
+    }
+}
+
+.info_media-search {
+    &--tabpane {
+        background-color: #fff;
+        padding: 0 1.2rem;
+    }
+
+    &-content {
+        background-color: #fff;
+    }
+}

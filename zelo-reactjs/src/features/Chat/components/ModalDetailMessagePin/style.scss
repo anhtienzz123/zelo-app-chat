@@ -1,0 +1,51 @@
+@import "../../../../scss/variables";
+.modal-detail-message-pin {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.file_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+
+    &-name {
+        margin-left: 1rem;
+        font-weight: 500;
+    }
+    &-icon {
+        max-height: 6rem;
+        max-width: 6rem;
+        svg {
+            width: 5rem;
+        }
+    }
+}
+
+.file_info-wrapper-pin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 30rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: $grey-500;
+
+    .icon-download {
+        cursor: pointer;
+        margin-left: 1rem;
+        font-size: 2rem;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid $grey-300;
+    }
+}

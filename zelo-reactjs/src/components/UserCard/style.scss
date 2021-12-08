@@ -1,0 +1,74 @@
+@import "../../scss/variables";
+#user-card {
+    // padding-bottom: 5rem;
+    .user-card_wrapper {
+        .user-card_cover-image {
+            position: relative;
+        }
+        .user-card_avatar {
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+
+            transform: translate(-50%, 50%);
+            // transform: translateY(50%);
+            .ant-image-mask {
+                border-radius: 50%;
+            }
+        }
+
+        .user-card-name {
+            margin-top: 6.8rem;
+            font-size: 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        .user-card-button {
+            display: flex;
+            margin-top: 1rem;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            &--addFriend {
+                margin-right: 1rem;
+            }
+            &--message {
+                margin-left: 1rem;
+            }
+        }
+
+        .user-card-button--no-margin {
+            margin-left: 0;
+        }
+
+        .user-card-infomation--flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // justify-content: center;
+        }
+
+        .user-card-infomation {
+            margin-top: 2rem;
+            padding: 0 4.3rem;
+            &__label {
+                width: 120px;
+                color: $neutral-500;
+            }
+        }
+
+        .user-card-button-optional {
+            padding: 0 3rem;
+            margin-top: 4rem;
+            padding-bottom: 2rem;
+        }
+
+        .user-card-button-optional--hidden {
+            visibility: hidden;
+        }
+    }
+}

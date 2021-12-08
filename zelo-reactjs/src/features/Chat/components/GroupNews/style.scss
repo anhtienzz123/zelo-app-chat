@@ -1,0 +1,14 @@
+// .group-news {
+//     // &_tabpane {
+//     //     padding: 0 1.2rem;
+//     // }
+// }
+.ant-tabs-nav-wrap {
+    padding: 0 1.2rem;
+}
+.ant-tabs-top > .ant-tabs-nav,
+.ant-tabs-bottom > .ant-tabs-nav,
+.ant-tabs-top > div > .ant-tabs-nav,
+.ant-tabs-bottom > div > .ant-tabs-nav {
+    margin: 0 0 0 0 !important;
+}

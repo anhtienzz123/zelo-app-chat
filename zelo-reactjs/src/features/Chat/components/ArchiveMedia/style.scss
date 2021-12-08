@@ -1,0 +1,59 @@
+@import "../../../../scss/variables";
+.info_media {
+    background: #fff;
+    padding: 1rem 0;
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.8rem 1.2rem;
+
+        &-title {
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+        &-icon {
+            transition: 0.2s;
+            font-size: 1.6rem;
+            color: $neutral-500;
+        }
+    }
+
+    &-interact {
+        position: relative;
+        overflow-y: hidden;
+        max-height: 300px;
+        transition: max-height 0.2s ease;
+        padding: 0rem 1.4rem;
+
+        &-media {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+        &-button button {
+            width: 100%;
+            font-weight: 600;
+            border: none;
+            outline: none;
+
+            padding: 0.5rem 0;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        &-button button:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &-interact-amount:hover {
+        background: $grey-400;
+    }
+}

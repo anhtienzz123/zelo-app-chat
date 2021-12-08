@@ -1,0 +1,63 @@
+@import "../../../../scss/variables";
+
+.channel-item.active {
+    background: rgba(88, 174, 255, 0.3);
+    color: $strong-blue;
+}
+
+.channel-item.active:hover {
+    background: rgba(88, 174, 255, 0.3);
+}
+
+.menu-item {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.channel-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.8rem 1.4rem;
+    cursor: pointer;
+    position: relative;
+
+    &-text {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-wrap: break-word;
+        margin-left: 1.4rem;
+        font-style: italic;
+    }
+    &-icon {
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.4rem;
+        transition: 0.2s;
+    }
+
+    .notify-amount {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: $red-color;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        right: 1.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        transition: 0.2s;
+    }
+}
+
+.channel-item:hover {
+    background: $grey-500;
+}

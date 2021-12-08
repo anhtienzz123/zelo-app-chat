@@ -1,0 +1,60 @@
+@import "../../../../scss/variables";
+$demension-icon: 48px;
+#header_friend {
+    height: 68px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+
+    .icon-header.back-list {
+        cursor: pointer;
+        padding: 0 0.56rem;
+        transition: 0.2s;
+        border-radius: 4px;
+        font-size: 20px;
+        margin-right: 1rem;
+        display: none;
+    }
+    .icon-header.back-list:hover {
+        background-color: $light-grey;
+    }
+
+    .header_friend {
+        &__img img {
+            height: $demension-icon;
+            width: $demension-icon;
+        }
+        &__text {
+            font-size: 24px;
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 767px) {
+        .icon-header.back-list {
+            display: block;
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        .icon-header.back-list {
+            display: block;
+        }
+        .header_friend__text {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}

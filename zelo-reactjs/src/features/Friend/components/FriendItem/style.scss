@@ -1,0 +1,70 @@
+@import "../../../../scss//variables";
+
+#friend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.4rem;
+    height: 68px;
+    transition: all 0.4s;
+    cursor: pointer;
+    .friend-item {
+        &_left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex: 1;
+        }
+
+        &_right {
+            visibility: hidden;
+        }
+
+        &-name {
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .recent-login {
+        color: $silver;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .recent-login {
+            font-size: 90%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .recent-login {
+            font-size: 80%;
+        }
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 767px) {
+        .recent-login {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        .recent-login {
+            display: none;
+        }
+    }
+}
+
+#friend-item:hover {
+    background: $grey-500;
+}
+
+#friend-item:hover .friend-item_right {
+    transition: visibility 0.4s;
+    visibility: visible;
+}
+
+.menu-item--highlight {
+    font-weight: 500;
+}

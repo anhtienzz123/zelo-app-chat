@@ -1,0 +1,105 @@
+@import "../../../../scss/variables";
+
+.conversation-item {
+    padding: 0.5rem 0.8rem;
+    list-style: none;
+    transition: 0.2s;
+    cursor: pointer;
+    height: 68px;
+
+    .conversation-item_box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .left-side-box {
+        .icon-users-group {
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    .middle-side-box {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 0.8rem;
+        padding-right: 0.4rem;
+        width: calc(100% - 94px);
+
+        .name-box {
+            font-weight: 500;
+            text-overflow: ellipsis;
+        }
+        .lastest-message {
+            font-size: 14px;
+            color: $thumbnail-text;
+            word-wrap: break-word;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .right-side-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 4.6rem;
+        .lastest-time {
+            font-size: 1.2rem;
+            color: $thumbnail-text;
+            text-align: center;
+        }
+        .message-count {
+            display: none;
+            height: 2rem;
+            width: 2rem;
+            color: $white-color;
+            text-align: center;
+
+            line-height: 2rem;
+            background-color: $red-color;
+            font-weight: 500;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+    }
+
+    .line-group {
+        .second-line-group {
+            margin-top: -8px;
+        }
+    }
+
+    .ant-avatar-group .ant-avatar:nth-child(1),
+    .ant-avatar-group .ant-avatar:nth-child(3) {
+        margin-left: 0 !important;
+    }
+
+    .ant-avatar-group .ant-avatar:nth-child(3),
+    .ant-avatar-group .ant-avatar:nth-child(4) {
+        margin-top: -8px;
+    }
+    .ant-avatar-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.conversation-item.arrived-message .right-side-box .message-count {
+    display: block;
+}
+
+.conversation-item.arrived-message .middle-side-box .name-box {
+    font-weight: bold;
+}
+
+.conversation-item.arrived-message .middle-side-box .lastest-message {
+    color: $black-color;
+    font-weight: 500;
+}
+.conversation-item:hover {
+    background-color: $light-grey;
+}
