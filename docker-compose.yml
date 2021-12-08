@@ -34,7 +34,7 @@ services:
       - redis-database
     environment:
       PORT: 3001
-      LOCAL_DATABASE_URL: mongodb://mongo-database:27017/zelo
+      DATABASE_URL: mongodb://mongo-database:27017/zelo
       REDIS_HOST: redis-database
       REDIS_PORT: 6379
       JWT_KEY: zelo
