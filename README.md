@@ -1,6 +1,6 @@
-# Zelo App Chat - NodeJs
+# Zelo App Chat
 
-## Demo: https://www.youtube.com/watch?v=xjQjPvWpoRU&t=73s
+## Video Demo: https://www.youtube.com/watch?v=xjQjPvWpoRU&t=73s
 
 ## Cách deploy
 
